@@ -1,0 +1,402 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>閃電十一人GO作業</title>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+  <!-- ★ 一次解決所有角色圖片高度問題（不用逐一改） -->
+<style>
+  /* ===== Carousel 角色圖（你之前用的）===== */
+  .carousel .image.featured {
+    height: 260px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .carousel .image.featured img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+  }
+
+  /* ===== Features（角色 / 隊伍 / 必殺技）三張圖 ===== */
+  #features .image.featured {
+    height: 220px;          /* 三張圖統一高度（可改） */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #features .image.featured img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;    /* 不裁切、不變形 */
+    display: block;
+  }
+  #features article p {
+  text-align: center;
+}
+
+</style>
+
+</head>
+
+<body class="homepage is-preload">
+<div id="page-wrapper">
+
+  <!-- Header -->
+  <div id="header" style="position: relative; min-height: 100vh; overflow: hidden;">
+  <div class="inner">
+
+  <!-- 主標文字區 -->
+  <header
+    style="
+      display: inline-block;
+      padding: 1.4em 2.4em;
+      background: rgba(0, 0, 0, 0.45);
+      border-radius: 18px;
+      text-align: center;
+    "
+  >
+    <h1 style="margin: 0;">
+      <a href="index.html"
+         id="logo"
+         style="
+           color: #ffffff;
+           text-decoration: none;
+           font-weight: 600;
+           letter-spacing: 0.1em;
+           text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+         "
+      >
+        閃電十一人GO
+      </a>
+    </h1>
+
+    <p
+      style="
+        margin-top: 0.6em;
+        color: #ffffff;
+        font-size: 0.95em;
+        text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+      "
+    >
+      必殺技、角色、隊伍整理
+    </p>
+  </header>
+
+  <!-- 進入按鈕 -->
+  <footer style="margin-top: 1.5em;">
+    <a href="#banner"
+       class="button circled scrolly"
+       style="text-shadow: 0 1px 3px rgba(0,0,0,0.6);"
+    >
+      進入
+    </a>
+  </footer>
+
+</div>
+
+<!-- 導覽列（同樣加半透明底） -->
+<nav id="nav"
+     style="
+       background: rgba(0, 0, 0, 0.35);
+       padding: 0.6em 0;
+     "
+>
+  <ul>
+    <li><a href="index.html" style="color:#fff;">首頁</a></li>
+    
+  <li>
+  <a href="left-sidebar.html" style="color:#fff;">隊伍</a>
+  <ul style="background: rgba(0,0,0,0.45); border-radius: 12px; padding: 0.4em 0.2em; backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px);">
+    <li><a href="left-sidebar.html#team-raimon-early" style="color:#fff;">雷門（前期）</a></li>
+    <li><a href="left-sidebar.html#team-eidou" style="color:#fff;">榮都</a></li>
+    <li><a href="left-sidebar.html#team-bannouzaka" style="color:#fff;">萬能坂</a></li>
+    <li><a href="left-sidebar.html#team-kaioh" style="color:#fff;">海王</a></li>
+    <li><a href="left-sidebar.html#team-hakuren" style="color:#fff;">白戀</a></li>
+    <li><a href="left-sidebar.html#team-ultimate" style="color:#fff;">究極閃光</a></li>
+    <li><a href="left-sidebar.html#team-zero" style="color:#fff;">零</a></li>
+    <li><a href="left-sidebar.html#team-shinun" style="color:#fff;">新雲</a></li>
+    <li><a href="left-sidebar.html#team-dragonlink" style="color:#fff;">巨龍聯隊</a></li>
+  </ul>
+</li>
+
+
+
+	<li><a href="left-sidebar.html#characters" style="color:#fff;">角色</a></li>
+    <li><a href="no-sidebar.html" style="color:#fff;">必殺技/化身</a></li>
+  </ul>
+</nav>
+
+  </div>
+
+  <!-- Banner -->
+  <section id="banner">
+    <header>
+      <h2><strong>閃電十一人GO</strong></h2>
+      <p>角色、隊伍、必殺技整理</p>
+    </header>
+  </section>
+
+  <!-- Carousel -->
+  <section class="carousel">
+    <div class="reel">
+
+      <article>
+        <a href="left-sidebar.html#characters" class="image featured"><img src="images/1-1.png" alt="松風天馬"></a>
+        <header><h3>松風天馬</h3></header>
+        <p>隊裡的心理治療師</p>
+      </article>
+
+      <article>
+        <a href="left-sidebar.html#characters" class="image featured"><img src="images/2-1.png" alt="神童"></a>
+        <header><h3>神童</h3></header>
+        <p>球場上的指揮家</p>
+      </article>
+
+      <article>
+        <a href="left-sidebar.html#characters" class="image featured"><img src="images/3-1.png" alt="劍城京介"></a>
+        <header><h3>劍城京介</h3></header>
+        <p>煞氣a暗黑天使前鋒</p>
+      </article>
+
+      <article>
+        <a href="left-sidebar.html#characters" class="image featured"><img src="images/4-1.png" alt="信助"></a>
+        <header><h3>信助</h3></header>
+        <p>從頭跟到位的皮卡丘</p>
+      </article>
+
+      <article>
+        <a href="left-sidebar.html#char-kariya" class="image featured"><img src="images/5-1.png" alt="狩屋"></a>
+        <header><h3>狩屋</h3></header>
+        <p>警戒心很強的孤兒</p>
+      </article>
+
+      <article>
+        <a href="left-sidebar.html#char-kariya" class="image featured"><img src="images/6-1.png" alt="霧野蘭丸"></a>
+        <header><h3>霧野蘭丸</h3></header>
+        <p>唯一發現孤兒另一面的聰明人</p>
+      </article>
+						
+						<article>
+							<a href="left-sidebar.html#龍馬" class="image featured"><img src="images/7-1.png" alt="錦 龍馬" /></a>
+							<header>
+								<h3><a href="#">龍馬</a></h3>
+							</header>
+							<p>前鋒出國變中場</p>
+						</article>
+
+						<article>
+							<a href="left-sidebar.html#char-kariya" class="image featured"><img src="images/8-1.png" alt="三國 太一" /></a>
+							<header>
+								<h3><a href="#">三國</a></h3>
+							</header>
+							<p>比起自己先關心羊的好人</p>
+						</article>
+
+						<article>
+							<a href="left-sidebar.html#char-kariya" class="image featured"><img src="images/9-1.png" alt="倉間 典人" /></a>
+							<header>
+								<h3><a href="#">倉間</a></h3>
+							</header>
+							<p>響尾蛇飛彈全劇無庸置疑的神技</p>
+						</article>
+
+						<article>
+							<a href="left-sidebar.html#龍馬" class="image featured"><img src="images/10-1.png" alt="影山 輝" /></a>
+							<header>
+								<h3><a href="#">影山</a></h3>
+							</header>
+							<p>所以我說那個鋼筋墜落你不會嗎</p>
+						</article>
+  </div>
+  </section>
+
+</div>
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.dropotron.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
+
+			<!-- Main -->
+				<div class="wrapper style2">
+
+					<article id="main" class="container special">
+						<a href="#" class="image featured"><img src="images/pic06.jpg" alt="" /></a>
+						<header>
+							<h2><a href="#">故事大綱</a></h2>
+							<p>
+								聖光之路大賽-掀起自由足球革命
+							</p>
+						</header>
+						<p>
+							前作主角・圓堂守所率領的日本代表隊「閃電日本隊」在FFI（Football Frontier International）世界大賽獲得優勝的10年後、一位最喜歡足球的少年・松風天馬因為憧憬閃電十一人、以及用過足球救他的閃電標誌，所以著進入雷門中學、而加入雷門足球隊。不過那時受到社會高度評價而且人材輩出的足球隊卻已經消失、而讓足球完全腐敗了。不知為何、全國足球被叫作｢第五院｣的組織所控制、如果不依照他們的指示踢球就不能比賽。而｢第五院｣的源種選手(被京介稱之為源種)・劍城京介只以一人之力就將整個雷門足球隊打得遍體鱗傷。於是他們為了找回十年前的足球精神、新雷門十一人們將要和成為雷門足球隊教練的圓堂一起共同奮戰......！
+						</p>
+				
+		
+
+				</div>
+
+			<!-- Features -->
+				<div class="wrapper style1">
+
+				<section id="features" class="container special">
+  <header>
+    <h2 id="characters">角色</h2>
+    <p>主角群與重要對手整理。</p>
+  </header>
+
+  <div class="row">
+    <article class="col-4 col-12-mobile special">
+      <a href="left-sidebar.html#team-raimon-early" class="image featured"><img src="images/11.PNG" alt="隊伍" /></a>
+      <header><h3><a href="#">主角隊</a></h3></header>
+      <p>雷門中學核心成員介紹。</p>
+    </article>
+
+    <article class="col-4 col-12-mobile special">
+      <a href="left-sidebar.html#team-eidou" class="image featured"><img src="images/12.PNG" alt="隊伍" /></a>
+      <header><h3><a href="#">隊伍</a></h3></header>
+      <p>各校隊伍特色與代表選手。</p>
+    </article>
+
+    <article class="col-4 col-12-mobile special">
+      <a href="no-sidebar.html" class="image featured"><img src="images/13.PNG" alt="必殺技" /></a>
+      <header><h3><a href="#">必殺技 / 化身</a></h3></header>
+      <p>射門、防守、化身系統整理。</p>
+    </article>
+  </div>
+</section>
+<a href="#" class="image featured"><img src="images/pic09.jpg" alt="" /></a>
+
+<header style="text-align: center;">
+  <h3><a href="#">英雄們的勝利之路</a></h3>
+</header>
+
+<p style="text-align: center;">
+  新出的遊戲好玩喔<br>
+  1/28更新小金剛的天秤<br>
+  每拿到一次小金剛我就賣一次
+</p>
+
+							</article>
+						</div>
+					</section>
+
+				</div>
+
+			<!-- Footer -->
+			<div id="footer">
+  <div class="container">
+    <div class="row">
+
+      <!-- 左：推特（保留） -->
+ <!-- 左：推特 -->
+<section class="col-4 col-12-mobile">
+  <header>
+    <h2 class="icon brands fa-twitter circled">
+      <span class="label">Tweets</span>
+    </h2>
+  </header>
+
+  <ul class="divided">
+    <li>
+      <article class="tweet">
+        <a href="https://x.com/inazuma_project" target="_blank" rel="noopener">
+          官方動畫與遊戲最新消息整理
+        </a>
+      </article>
+    </li>
+
+    <li>
+      <article class="tweet">
+        <a href="https://x.com/AkihiroHino" target="_blank" rel="noopener">
+          日野情報更新
+        </a>
+      </article>
+    </li>
+  </ul>
+</section>
+
+    </li>
+  </ul>
+</section>
+
+      <!-- 中：官方網站連結 -->
+      <section class="col-4 col-12-mobile">
+        <header>
+          <h2 class="icon solid fa-link circled">
+            <span class="label">Links</span>
+          </h2>
+        </header>
+        <ul class="divided">
+          <li><a href="https://www.inazuma.jp/" target="_blank">閃電十一人 官方網站</a></li>
+          <li><a href="https://www.tv-tokyo.co.jp/anime/inazumago/" target="_blank">TV Tokyo 動畫頁</a></li>
+          <li><a href="https://zh.wikipedia.org/zh-tw/%E9%96%83%E9%9B%BB%E5%8D%81%E4%B8%80%E4%BA%BAGO" target="_blank">維基百科（GO）</a></li>
+           <li><a href="https://zukan.inazuma.jp/" target="_blank">角色/必殺技情報</a></li>
+
+        </ul>
+      </section>
+
+      <!-- 右：回到頂部 -->
+      <section class="col-4 col-12-mobile">
+        <header>
+          <h2 class="icon solid fa-arrow-up circled">
+            <span class="label">Top</span>
+          </h2>
+        </header>
+
+        <p style="text-align:center;">
+          <a href="#page-wrapper" class="button">回到最上面</a>
+        </p>
+      </section>
+
+    </div>
+
+    <hr />
+
+    <div class="row">
+      <div class="col-12">
+
+        <!-- Contact / 作業資訊 -->
+        <section class="contact">
+          <header>
+            <h3>閃電十一人 GO 主題網站</h3>
+          </header>
+          <p>
+            本網站為課堂作業使用，資料來源來自官方網站與公開資料。
+          </p>
+        </section>
+
+        <!-- Copyright -->
+        <div class="copyright">
+          <ul class="menu">
+            <li>&copy; 作業用途</li>
+            <li>Template: HTML5 UP</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+	</body>
+</html>
